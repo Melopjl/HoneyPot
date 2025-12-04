@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
     <meta charset="utf-8">
     <title>Honeypot Dashboard</title>
@@ -9,35 +9,45 @@
 </head>
 
 <body>
-    <header>
-        <h1>🛡️ Fake SSH Honeypot Dashboard</h1>
-        <a class="btn" href="/export.csv">Exportar CSV</a>
+
+    <header style="padding: 20px; text-align: center;">
+        <h1 class="neon glow-loop">🛡️ Honeypot Dashboard</h1>
+        <a class="btn" href="/export.csv" style="margin-top: 10px; display:inline-block;">
+            Exportar CSV
+        </a>
     </header>
 
     <section class="stats">
         <div class="card">
-            <h3>Total de Tentativas</h3>
-            <p id="total">0</p>
+            <h3 class="neon-blue">Total de Tentativas</h3>
+            <p id="total" class="neon">0</p>
         </div>
 
         <div class="card">
-            <h3>Top IPs</h3>
+            <h3 class="neon-blue">Top IPs</h3>
             <ul id="top-ips"></ul>
         </div>
 
         <div class="card">
-            <h3>Top Usuários</h3>
+            <h3 class="neon-blue">Top Usuários</h3>
             <ul id="top-users"></ul>
         </div>
     </section>
 
-    <section>
-        <canvas id="chart" height="80"></canvas>
+
+    <section class="container">
+        <h2 class="neon-blue">Tentativas por período</h2>
+        <canvas id="chart" height="90"></canvas>
     </section>
 
-    <section>
-        <h2>Últimas Tentativas</h2>
-        <pre id="logs">Carregando...</pre>
+    <section class="container">
+        <h2 class="neon-blue">Últimas Tentativas</h2>
+        <div class="log-box" id="logs">Carregando...</div>
     </section>
+
+    <footer>
+        HoneySpot © {{ year }}
+    </footer>
+
 </body>
 </html>

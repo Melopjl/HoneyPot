@@ -22,7 +22,6 @@ def send_discord(text):
         return False
 
 def notify_all(text):
-    # Fire-and-forget; don't block honeypot
     try:
         send_telegram(text)
         send_discord(text)
