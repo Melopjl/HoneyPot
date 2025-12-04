@@ -1,0 +1,62 @@
+# --- PYTHON ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+*.log
+
+# Ambiente virtual
+venv/
+env/
+ENV/
+*.env
+
+# Cache do Python
+.pytest_cache/
+.cache/
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# --- FLASK ---
+instance/
+*.db
+*.sqlite3
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# --- LOGS DO HONEYPOT ---
+logs/
+*.json
+*.txt
+
+# Caso queira manter logs vazios, ignore assim:
+# logs/*
+# !logs/.keep
+
+# --- SISTEMA OPERACIONAL ---
+.DS_Store
+Thumbs.db
+
+# --- EDITORES ---
+.vscode/
+.vscode/*
+.idea/
+*.swp
+*.swo
+
+# Arquivos de backup de editores
+*~
+*.bak
+
+# --- NODE / FRONT-END (se usar Chart.js via npm depois) ---
+node_modules/
+npm-debug.log
+yarn.lock
+package-lock.json
