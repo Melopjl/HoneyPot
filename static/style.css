@@ -1,0 +1,137 @@
+/* ========= BASE ========= */
+body {
+    margin: 0;
+    padding: 0;
+    background: #050008;
+    color: #e2d9ff;
+    font-family: "JetBrains Mono", monospace;
+    overflow-x: hidden;
+}
+
+/* ========= SCROLLBAR ========= */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: #7b2fff;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #12021d;
+}
+
+/* ========= NEON GLOW ========= */
+.neon {
+    color: #c779ff;
+    text-shadow: 0 0 8px #b14cff, 0 0 20px #8f3aff;
+}
+
+.neon-blue {
+    color: #4ef9ff;
+    text-shadow: 0 0 10px #4ef9ff, 0 0 25px #3aeaff;
+}
+
+/* ========= CONTAINERS ========= */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    background: rgba(20, 0, 35, 0.35);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #6a00ff;
+    box-shadow: 0 0 12px #6a00ff55;
+    backdrop-filter: blur(6px);
+}
+
+/* ========= TITLES ========= */
+h1, h2, h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 32px;
+    color: #e2d9ff;
+    text-shadow: 0 0 10px #8f3aff;
+}
+
+h2 {
+    font-size: 20px;
+    color: #d7b0ff;
+}
+
+/* ========= BUTTONS ========= */
+button {
+    background: none;
+    border: 2px solid #a200ff;
+    color: #e2d9ff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.15s;
+    text-shadow: 0 0 8px #9b55ff;
+}
+
+button:hover {
+    background: #a200ff;
+    box-shadow: 0 0 12px #a200ff, 0 0 25px #7c00c9;
+}
+
+/* ========= INPUTS ========= */
+input {
+    width: 100%;
+    padding: 12px;
+    background: #12001f;
+    border: 2px solid #7b2fff;
+    border-radius: 6px;
+    color: #e2d9ff;
+    font-family: inherit;
+    margin-bottom: 15px;
+    outline: none;
+    transition: 0.2s;
+}
+
+input:focus {
+    border-color: #c779ff;
+    box-shadow: 0 0 10px #c779ff;
+}
+
+/* ========= LOG BOX ========= */
+.log-box {
+    width: 100%;
+    height: 300px;
+    background: #0b0012;
+    border: 1px solid #6900ff;
+    padding: 10px;
+    overflow-y: auto;
+    font-size: 13px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 14px #4c00a855;
+    white-space: pre-line;
+}
+
+/* ========= ANIMATIONS ========= */
+@keyframes glowPulse {
+    0% { text-shadow: 0 0 10px #a400ff; }
+    50% { text-shadow: 0 0 20px #ca59ff; }
+    100% { text-shadow: 0 0 10px #a400ff; }
+}
+
+.glow-loop {
+    animation: glowPulse 2.4s infinite ease-in-out;
+}
+
+/* ========= FOOTER ========= */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #8855ff;
+    font-size: 12px;
+    opacity: 0.7;
+}
+footer:hover {
+    opacity: 1;
+}
